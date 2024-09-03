@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+.linkedin-button {
+    background-color: #0077B5;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin-button i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.linkedin-button:hover {
+    background-color: #005582;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.linkedin-button:active {
+    background-color: #00415e;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 80px; 
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f7f8fc;
+    color: #333333;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0077B5;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #005582;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #00415e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+
+.btn-operator {
+    background-color: #ff9500;
+}
+
+.btn-operator:hover {
+    background-color: #e57c00;
+}
+
+.btn-operator:active {
+    background-color: #cc6f00;
+}
+
+.btn-clear, .btn-delete {
+    background-color: #e53935;
+}
+
+.btn-clear:hover, .btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+.btn-clear:active, .btn-delete:active {
+    background-color: #c62828;
+}
+
+.btn-equal {
+    grid-column: span 2;
+    background-color: #4caf50;
+}
+
+.btn-equal:hover {
+    background-color: #43a047;
+}
+
+.btn-equal:active {
+    background-color: #388e3c;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}

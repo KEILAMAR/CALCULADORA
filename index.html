@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Calculadora
+        </title> 
+        <link rel="stylesheet" href="styles.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">   
+    </head>
+  
+    <body>
+        <header>
+            <a href="https://www.linkedin.com/in/keila-n-m-132656a0" target="_blank" class="linkedin-button">
+                <i class="fab fa-linkedin"></i> Contacta en LinkedIn
+            </a>
+        </header> 
+        
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button class="btn-clear" onclick="clearDisplay()">C</button>
+                <button class="btn-delete" onclick="deleteLast()">DEL</button>
+                <button class="btn-operator" onclick="appendCharacter('/')">/</button>
+                <button class="btn-operator" onclick="appendCharacter('*')">*</button>
+    
+                <button class="btn-number" onclick="appendCharacter('7')">7</button>
+                <button class="btn-number" onclick="appendCharacter('8')">8</button>
+                <button class="btn-number" onclick="appendCharacter('9')">9</button>
+                <button class="btn-operator" onclick="appendCharacter('-')">-</button>
+    
+                <button class="btn-number" onclick="appendCharacter('4')">4</button>
+                <button class="btn-number" onclick="appendCharacter('5')">5</button>
+                <button class="btn-number" onclick="appendCharacter('6')">6</button>
+                <button class="btn-operator" onclick="appendCharacter('+')">+</button>
+    
+                <button class="btn-number" onclick="appendCharacter('1')">1</button>
+                <button class="btn-number" onclick="appendCharacter('2')">2</button>
+                <button class="btn-number" onclick="appendCharacter('3')">3</button>
+                <button class="btn-decimal" onclick="appendCharacter('.')">.</button>
+
+                <button class="btn-zero" onclick="appendCharacter('0')">0</button>
+                <button class="btn-equal" onclick="calculateResult()">=</button>
+                
+            </div>
+        </div>
+    
+        <script src="logica.js"></script>
+    </body>
+</html>
